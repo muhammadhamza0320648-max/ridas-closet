@@ -118,28 +118,57 @@ const HomePage = ({ products, categories, openProduct, goToShop, toggleWishlist,
           </div>
         </div>
       </section>
+{/* Premium Sale Banner */}
+<section className="py-16 bg-brand-dark">
+  <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div className="relative overflow-hidden rounded-3xl bg-gradient-to-r from-brand-gold to-brand-rose p-8 md:p-12 text-center shadow-xl">
 
-      {/* Trending Products */}
-      <section className="py-20 bg-white">
+      <div className="relative z-10">
+        <p className="text-white uppercase tracking-[0.3em] text-sm mb-3">
+          New Collection
+        </p>
+
+        <h2 className="font-display text-3xl md:text-5xl font-bold text-white mb-4">
+          Premium Fashion Sale
+        </h2>
+
+        <p className="text-white/90 text-lg mb-8">
+          Discover elegant styles with exclusive offers.
+        </p>
+
+        <button
+          onClick={() => goToShop('All')}
+          className="bg-white text-brand-dark px-8 py-3 rounded-full font-semibold hover:bg-brand-dark hover:text-white transition-all shadow-lg"
+        >
+          Shop Now
+        </button>
+      </div>
+
+    </div>
+  </div>
+</section>
+          {/* Trending Products */}
+      <section className="py-20 bg-gradient-to-b from-white to-brand-cream/40">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="flex items-end justify-between mb-12">
-            <div>
-              <p className="text-brand-gold font-medium tracking-[0.2em] uppercase text-sm mb-2">
-                Featured
-              </p>
-              <h2 className="font-display text-4xl font-bold text-brand-dark">
-                Trending Now
-              </h2>
-            </div>
-            <button 
-              onClick={() => goToShop('All')} 
-              className="hidden md:flex items-center gap-2 text-brand-dark font-semibold hover:text-brand-gold transition-colors"
-            >
-              View All <ChevronRight className="w-5 h-5" />
-            </button>
+
+          <div className="text-center mb-14">
+            <span className="inline-block bg-brand-gold/10 text-brand-gold px-4 py-2 rounded-full text-sm font-semibold tracking-widest uppercase mb-4">
+              Featured Collection
+            </span>
+
+            <h2 className="font-display text-4xl md:text-5xl font-bold text-brand-dark mb-4">
+              Trending Now
+            </h2>
+
+            <p className="max-w-2xl mx-auto text-gray-600 text-lg leading-relaxed">
+  Discover our most loved styles, carefully selected to bring elegance,
+  comfort, and timeless fashion to your wardrobe.
+</p>
+
+            <div className="w-24 h-1 bg-brand-gold mx-auto mt-6 rounded-full"></div>
           </div>
 
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
             {trendingProducts.map(product => (
               <ProductCard 
                 key={product.id} 
@@ -151,14 +180,15 @@ const HomePage = ({ products, categories, openProduct, goToShop, toggleWishlist,
             ))}
           </div>
 
-          <div className="mt-8 text-center md:hidden">
-            <button 
-              onClick={() => goToShop('All')} 
-              className="inline-flex items-center gap-2 text-brand-dark font-semibold hover:text-brand-gold transition-colors"
-            >
-              View All Products <ChevronRight className="w-5 h-5" />
-            </button>
-          </div>
+         <div className="mt-10 text-center md:hidden">
+  <button
+    onClick={() => goToShop('All')}
+    className="inline-flex items-center gap-2 bg-brand-dark text-white px-6 py-3 rounded-full font-semibold hover:bg-brand-gold transition-all duration-300 shadow-lg"
+  >
+    View All Collection
+    <ChevronRight className="w-5 h-5" />
+  </button>
+</div>
         </div>
       </section>
 
