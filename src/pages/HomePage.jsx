@@ -29,8 +29,8 @@ const HomePage = ({ products, categories, openProduct, goToShop, toggleWishlist,
         <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full">
           <div className="max-w-2xl animate-fade-in">
             <p className="text-brand-gold font-medium tracking-[0.3em] uppercase mb-4 text-sm">
-              Premium Pakistani Fashion
-            </p>
+  Rida's Exclusive Collection
+</p>
             <h1 className="font-display text-5xl md:text-7xl font-bold text-white leading-tight mb-6">
               Elegant Fashion For<br/>Every Occasion
             </h1>
