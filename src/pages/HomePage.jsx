@@ -34,9 +34,10 @@ const HomePage = ({ products, categories, openProduct, goToShop, toggleWishlist,
              Timeless Elegance<br/>For The Modern Woman
             </h1>
             <p className="text-white/80 text-lg md:text-xl mb-8 leading-relaxed max-w-lg">
-             Step into a world of timeless Pakistani elegance.
-            Luxury lawn, exquisite embroidery, and graceful designs crafted for every occasion.
-            </p>
+  Where tradition meets modern elegance. 
+  Discover luxurious Pakistani fashion crafted with exquisite fabrics, 
+  intricate embroidery, and timeless designs.
+</p>
             <div className="flex flex-wrap gap-4">
               <button 
                 onClick={() => goToShop('All')} 
