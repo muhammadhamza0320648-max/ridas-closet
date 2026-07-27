@@ -73,8 +73,8 @@ const HomePage = ({ products, categories, openProduct, goToShop, toggleWishlist,
                 <div className="w-16 h-16 bg-white/10 rounded-2xl flex items-center justify-center mx-auto mb-4 group-hover:bg-brand-gold transition-colors duration-300">
                   <f.icon className="w-8 h-8 text-brand-gold group-hover:text-white transition-colors" />
                 </div>
-                <h3 className="text-white font-semibold mb-1">{f.title}</h3>
-                <p className="text-white/60 text-sm">{f.desc}</p>
+                <h3 className="text-brand-dark font-semibold mb-1">{f.title}</h3>
+<p className="text-gray-500 text-sm">{f.desc}</p>
               </div>
             ))}
           </div>
