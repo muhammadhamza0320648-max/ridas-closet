@@ -19,7 +19,7 @@ const HomePage = ({ products, categories, openProduct, goToShop, toggleWishlist,
       <section className="relative h-screen min-h-[700px] flex items-center overflow-hidden">
         <div className="absolute inset-0">
           <img 
-            src="https://images.unsplash.com/photo-1558171813-4c088753af8f?w=1920&h=1080&fit=crop" 
+            src="https://images.unsplash.com/photo-1594633312681-425c7b97ccd1?w=1920&h=1080&fit=crop"
             alt="Premium Pakistani Fashion" 
             className="w-full h-full object-cover"
           />
@@ -32,7 +32,7 @@ const HomePage = ({ products, categories, openProduct, goToShop, toggleWishlist,
   Rida's Exclusive Collection
 </p>
             <h1 className="font-display text-5xl md:text-7xl font-bold text-white leading-tight mb-6">
-              Elegant Fashion For<br/>Every Occasion
+             Timeless Elegance<br/>For The Modern Woman
             </h1>
             <p className="text-white/80 text-lg md:text-xl mb-8 leading-relaxed max-w-lg">
               Discover premium lawn, embroidered and stylish ladies wear at affordable prices. 
