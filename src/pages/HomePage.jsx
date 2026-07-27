@@ -4,13 +4,12 @@ import ProductCard from '../components/ProductCard'
 import { formatPKR } from '../data/products'
 
 const HomePage = ({ products, categories, openProduct, goToShop, toggleWishlist, wishlist }) => {
-  const features = [
-    { icon: Truck, title: "Cash on Delivery", desc: "Pay when you receive your order" },
-    { icon: RotateCcw, title: "Easy Exchange", desc: "7-day hassle-free exchange policy" },
-    { icon: Shield, title: "Quality Fabric", desc: "Premium materials guaranteed" },
-    { icon: Zap, title: "Fast Delivery", desc: "2-4 days nationwide delivery" }
-  ]
-
+ const features = [
+  { icon: Truck, title: "Secure Payments", desc: "Cash on Delivery Available" },
+  { icon: RotateCcw, title: "Easy Exchange", desc: "7-Day Simple Return Policy" },
+  { icon: Shield, title: "Premium Quality", desc: "Luxury Fabrics Guaranteed" },
+  { icon: Zap, title: "Fast Delivery", desc: "Delivered Across Pakistan" }
+]
   const trendingProducts = products.slice(0, 4)
 
   return (
@@ -66,7 +65,7 @@ const HomePage = ({ products, categories, openProduct, goToShop, toggleWishlist,
       </section>
 
       {/* Features Bar */}
-    <section className="bg-gradient-to-r from-brand-dark via-brand-dark/95 to-brand-dark py-16">
+    <section className="bg-white py-16 border-t border-gray-100">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
             {features.map((f, i) => (
