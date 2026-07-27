@@ -23,7 +23,7 @@ const HomePage = ({ products, categories, openProduct, goToShop, toggleWishlist,
             alt="Premium Pakistani Fashion" 
             className="w-full h-full object-cover"
           />
-          <div className="absolute inset-0 bg-gradient-to-r from-brand-dark/80 via-brand-dark/50 to-transparent" />
+         <div className="absolute inset-0 bg-gradient-to-r from-black/80 via-black/50 to-transparent" />
         </div>
         <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full">
           <div className="max-w-2xl animate-fade-in">
@@ -41,7 +41,7 @@ const HomePage = ({ products, categories, openProduct, goToShop, toggleWishlist,
             <div className="flex flex-wrap gap-4">
               <button 
                 onClick={() => goToShop('All')} 
-                className="bg-gradient-to-r from-brand-gold to-yellow-500 text-white px-8 py-4 rounded-full font-semibold hover:shadow-xl transition-all transform hover:scale-105 flex items-center gap-2"
+               className="bg-gradient-to-r from-brand-gold to-yellow-600 text-white px-10 py-4 rounded-full font-semibold tracking-wide hover:shadow-2xl transition-all duration-300 transform hover:scale-105 flex items-center gap-2"
               >
                 Shop Collection <ArrowRight className="w-5 h-5" />
               </button>
@@ -49,7 +49,7 @@ const HomePage = ({ products, categories, openProduct, goToShop, toggleWishlist,
   href="https://wa.me/923326284444" 
   target="_blank"
   rel="noopener noreferrer"
-  className="bg-white text-brand-dark px-8 py-4 rounded-full font-semibold hover:bg-brand-gold hover:text-white transition-all transform hover:scale-105 shadow-lg flex items-center gap-2"
+  className="bg-white/10 backdrop-blur-sm border border-white/30 text-white px-10 py-4 rounded-full font-semibold tracking-wide hover:bg-brand-gold hover:text-white transition-all duration-300 transform hover:scale-105 shadow-lg flex items-center gap-2"
 >
   <MessageCircle className="w-5 h-5" /> Order on WhatsApp
 </a>
