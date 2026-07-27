@@ -25,7 +25,6 @@ const HomePage = ({ products, categories, openProduct, goToShop, toggleWishlist,
           />
           <div className="absolute inset-0 bg-gradient-to-r from-brand-dark/80 via-brand-dark/50 to-transparent" />
         </div>
-
         <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full">
           <div className="max-w-2xl animate-fade-in">
             <p className="text-brand-gold font-medium tracking-[0.3em] uppercase mb-4 text-sm">
@@ -35,24 +34,24 @@ const HomePage = ({ products, categories, openProduct, goToShop, toggleWishlist,
              Timeless Elegance<br/>For The Modern Woman
             </h1>
             <p className="text-white/80 text-lg md:text-xl mb-8 leading-relaxed max-w-lg">
-              Discover premium lawn, embroidered and stylish ladies wear at affordable prices. 
-              Curated for the modern Pakistani woman.
+             Step into a world of timeless Pakistani elegance.
+            Luxury lawn, exquisite embroidery, and graceful designs crafted for every occasion.
             </p>
             <div className="flex flex-wrap gap-4">
               <button 
                 onClick={() => goToShop('All')} 
-                className="bg-brand-gold text-white px-8 py-4 rounded-full font-semibold hover:bg-brand-rose transition-all transform hover:scale-105 shadow-lg flex items-center gap-2"
+                className="bg-gradient-to-r from-brand-gold to-yellow-500 text-white px-8 py-4 rounded-full font-semibold hover:shadow-xl transition-all transform hover:scale-105 flex items-center gap-2"
               >
                 Shop Collection <ArrowRight className="w-5 h-5" />
               </button>
-              <a 
-                href="https://wa.me/923326284444" 
-                target="_blank"
-                rel="noopener noreferrer"
-                className="bg-white/10 backdrop-blur-sm border border-white/30 text-white px-8 py-4 rounded-full font-semibold hover:bg-white/20 transition-all flex items-center gap-2"
-              >
-                <MessageCircle className="w-5 h-5" /> Order on WhatsApp
-              </a>
+             <a 
+  href="https://wa.me/923326284444" 
+  target="_blank"
+  rel="noopener noreferrer"
+  className="bg-white text-brand-dark px-8 py-4 rounded-full font-semibold hover:bg-brand-gold hover:text-white transition-all transform hover:scale-105 shadow-lg flex items-center gap-2"
+>
+  <MessageCircle className="w-5 h-5" /> Order on WhatsApp
+</a>
             </div>
           </div>
         </div>
@@ -66,7 +65,7 @@ const HomePage = ({ products, categories, openProduct, goToShop, toggleWishlist,
       </section>
 
       {/* Features Bar */}
-      <section className="bg-brand-dark py-16">
+    <section className="bg-gradient-to-r from-brand-dark via-brand-dark/95 to-brand-dark py-16">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
             {features.map((f, i) => (
